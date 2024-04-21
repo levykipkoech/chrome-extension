@@ -1,6 +1,10 @@
-// Log out "Button clicked!" when the user clicks the "SAVE INPUT" button
-//let button = document.getElementById("input-btn")
+let myLeads = []
+const inputEl = document.getElementById("input-el")
+const inputBtn = document.getElementById("input-btn")
 
-function saveButton(){
-    console.log("button clicked")
-}
+// Push the value "www.awesomelead.com" to myArray when the input button is clicked
+
+inputBtn.addEventListener("click", function() {
+    myLeads.push("www.awesomelead.com")
+    console.log(myLeads)
+})
